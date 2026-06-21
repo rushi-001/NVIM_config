@@ -1,3 +1,3 @@
 return {
-  { "navarasu/onedark.nvim", lazy = false, priority = 1000 },
+  { "navarasu/onedark.nvim", lazy = false, priority = 1000, opts = { transparent = true, styles = { sidebars = "transparent", floats = "transparent" } } },
 }

@@ -35,14 +35,14 @@ vim.keymap.set("n", "<leader>ut", "<cmd>CycleTheme<CR>", { desc = "Cycle Theme" 
 -- --------------------------------------- File/Path/nvim-tree Keymaps ---------------------------------------
 -- Map '<leader>cp' to copy the absolute file path of the current file to the system clipboard
 vim.keymap.set("n", "<leader>cp", function()
- vim.fn.setreg("+", vim.fn.expand("%:p"))
- print("Copied absolute path")
+  vim.fn.setreg("+", vim.fn.expand("%:p"))
+  print("Copied absolute path")
 end, { desc = "Copy absolute path" })
 
 -- Map '<leader>cfn' to copy just the file name of the current file to the system clipboard
 vim.keymap.set("n", "<leader>cfn", function()
- vim.fn.setreg("+", vim.fn.expand("%:t"))
- print("Copied file name")
+  vim.fn.setreg("+", vim.fn.expand("%:t"))
+  print("Copied file name")
 end, { desc = "Copy file name" })
 -- -----------------------------------------------------------------------------------------
 
